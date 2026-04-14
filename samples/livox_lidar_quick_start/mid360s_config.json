@@ -1,5 +1,5 @@
 {
-  "MID360": {
+  "Mid360s": {
     "lidar_net_info" : {
       "cmd_data_port"  : 56100,
       "push_msg_port"  : 56200,
@@ -10,7 +10,6 @@
     "host_net_info" : [
       {
         "host_ip"        : "192.168.1.5",
-        "multicast_ip"   : "224.1.1.5",
         "cmd_data_port"  : 56101,
         "push_msg_port"  : 56201,
         "point_data_port": 56301,

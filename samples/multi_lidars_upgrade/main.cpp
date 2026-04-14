@@ -104,9 +104,8 @@ int main(int argc, const char *argv[]) {
   }
   SetLivoxLidarInfoChangeCallback(LidarInfoChangeCallback, nullptr);
 
-  //Lidar Upgrade
+    //Lidar Upgrade
   if (!SetLivoxLidarUpgradeFirmwarePath(firmware_path.c_str())) {
-    printf("SetLivoxLidarUpgradeFirmwarePath Failed\n");
     LivoxLidarSdkUninit();
     return -1;
   }
@@ -120,8 +119,6 @@ int main(int argc, const char *argv[]) {
     UpgradeLivoxLidars(handles.data(), handles.size());
     break;
   }
-
-  printf("Livox Lidars Update Finished!\n");
 
 #ifdef WIN32
   Sleep(3000000000);
