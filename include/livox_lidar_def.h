@@ -66,6 +66,7 @@ typedef enum {
   kLivoxLidarTypeIndustrialHAP = 10,
   kLivoxLidarTypeHAP = 15,
   kLivoxLidarTypePA = 16,
+  kLivoxLidarTypeMid360s = 35,
 } LivoxLidarDeviceType;
 
 typedef enum {
